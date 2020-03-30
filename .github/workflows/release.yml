@@ -27,3 +27,8 @@ jobs:
       uses: satackey/release-js-action@v0.0.2
       with:
         push-branch: release-${{ steps.name.outputs.branch }}
+    
+    - name: Test
+      uses: ./
+      with:
+        milliseconds: 1000
